@@ -1,0 +1,50 @@
+body{
+  background-color: black;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family: 'Roboto',sans-serif;
+}
+
+.header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 13vh;
+  width: 80vw;
+  margin: auto;
+}
+
+.left-header{
+  color: red;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.material-symbols-outlined{
+  color: rgb(59, 58, 58);
+  position: relative;
+  top: 8px;
+  left: 30px;
+}
+
+.search-bar{
+  width: 18vw;
+  height: 6vh;
+  background-color: grey;
+  border: none;
+  transition: background-color 0.3s;
+}
+
+.search-bar:focus{
+  outline: none;
+}
+
+
+::placeholder{
+  position: relative;
+  left: 30px;
+  color: rgb(59, 58, 58);
+}
+
