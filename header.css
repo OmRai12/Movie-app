@@ -5,6 +5,8 @@ body{
   background-repeat: no-repeat;
   background-attachment: fixed;
   font-family: 'Roboto',sans-serif;
+  overflow-x: hidden;
+  padding-bottom: 10000px;
 }
 
 .header{
@@ -27,7 +29,14 @@ body{
   position: relative;
   top: 8px;
   left: 30px;
+  transition: opacity 0.3s;
 }
+
+.search-bar:focus-within ~ .material-symbols-outlined {
+  opacity: 0; /* Hide the material-symbols-outlined when the search bar or its descendants are in focus */
+}
+
+
 
 .search-bar{
   width: 18vw;
