@@ -8,7 +8,10 @@ body{
   overflow-x: hidden;
   padding-bottom: 10000px;
 }
-
+.container{
+  display: flex;
+  align-items: flex-start;
+}
 .header{
   display: flex;
   justify-content: space-between;
