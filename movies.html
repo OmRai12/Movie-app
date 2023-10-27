@@ -3,76 +3,97 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Movies app</title>
+  <title>Document</title>
   <link rel="stylesheet" href="header.css">
-  <link rel="stylesheet" href="sidebar.css">
   <link rel="stylesheet" href="main-section.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+  <link rel="stylesheet" href="sub-footer.css">
+  <link rel="stylesheet" href="footer.css">
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
 </head>
 <body>
-
-  <div class="header">
-    <div class="left-header">
-      Netflix 
-    </div>
-    <div class="right-header">
-      <span class="material-symbols-outlined">
-        search
-        </span>
-      <input type="text" placeholder="Search any movies..." class="search-bar">
-    </div>
+<div class="header">
+  <i class="uil uil-bars navOpenBtn"></i>
+  <a href="#" class="logo">Netflix</a>
+  <div class="middle-header">
+    <i class="uil uil-times navCloseBtn"></i>
+    <a href="#">Home</a>
+    <a href="#">Movies</a>
+    <a href="#">TV Show</a>
+    <a href="#">Now Playing</a>
+    <a href="#">Popular</a>
+    <a href="#">Top-Rated</a>
+    <a href="#">Upcoming</a>
+  </div>
+   
+  <i class="uil uil-search search-icon"></i>
+  <div class="search-box">
+    <i class="uil uil-search search-icon"></i>
+    <input type="text" placeholder="Search here...">
+  </div>
 </div>
-  
- <div class="container">
-  <div class="sidebar">
-    <a href="" class="Genre-sidebar">Genre</a>
-    <a href="">Adventure</a>
-    <a href="">Fantasy</a>
-    <a href="">Animation</a>
-    <a href="">Drama</a>
-    <a href="">Horror</a>
-    <a href="">Action</a>
-    <a href="">Comedy</a>
-    <a href="">History</a>
-    <a href="">Western</a>
-    <a href="">Thriller</a>
-    <a href="">Crime</a>
-    <a href="">Documentary</a>
-    <a href="">Science Fiction</a>
-    <a href="">Mystery</a>
-    <a href="">Music</a>
-    <a href="">Romance</a>
-    <a href="">Family</a>
-    <a href="">War</a>
-    <a href="">TV Movie</a>
-  <div class="down-sidebar">
-   <a href="">Language</a>
-  <div class="down-sidebar-1">
-    <a href="">English</a>
-    <a href="">Hindi</a>
-    <a href="">Bengali</a>
-  </div>
-  </div>
-  </div>
 
   <div class="main-section">
     <img src="images/ddlj.jpg" class="ddlj-image">
+    <div class="Movie-main-section">
+      <p>Movies</p>
+      <img src="images/ddlj.jpg" class="ddlj-image">
+    </div>
+    <div class="TV-Show-main-section">
+      <p>TV Show</p>
+      <img src="images/ddlj.jpg" class="ddlj-image">
+    </div>
+    <div class="Now-Playing-main-section">
+      <p>Now Playing</p>
+      <img src="images/ddlj.jpg" class="ddlj-image">
+    </div>
+    <div class="Popular-main-section">
+      <p>Popular</p>
+      <img src="images/ddlj.jpg" class="ddlj-image">
+    </div>
+    <div class="Top-Rated-main-section">
+      <p>Top Rated</p>
+      <img src="images/ddlj.jpg" class="ddlj-image">
+    </div>
+    <div class="Upcoming-main-section">
+      <p>Upcoming</p>
+      <img src="images/ddlj.jpg" class="ddlj-image">
+    </div>
   </div>
-</div>
- 
- 
+
+  <div class="Sub-footer">
+    <div class="first-sub-footer">
+      <a href="#">Movies</a>
+      <a href="#">TV Show</a>
+      <a href="#">Accessiblity</a>
+    </div>
+    <div class="second-sub-footer">
+      <a href="#">Cookie Policy</a>
+      <a href="#">Terms of Use</a>
+      <a href="#">Help Center</a>
+    </div>
+    <div class="third-sub-footer">
+      <a href="#">Support</a>
+      <a href="#">FAQ</a>
+      <a href="#">Supportdevice</a>
+    </div>
+    <div class="fourth-sub-footer">
+      <a href="#">Follow</a>
+    </div>
+  </div>
+
+  <div class="footer">
+    <div class="left-footer">
+      Copyright 2023
+    </div>
+    <div class="right-footer">
+     <div>Privacy Policy</div>
+     <div>Term & Condition</div>
+    </div>
+  </div>
 
   
   
 
-
-  
-  
-  
-  
-  <script src="movies.js"></script>
+  <script src="header.js"></script>
 </body>
 </html>

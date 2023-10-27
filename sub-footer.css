@@ -1,0 +1,20 @@
+.Sub-footer{
+  display: flex;
+  align-items: center;
+  width: 95vw;
+  justify-content: space-around;
+  margin-top: 30px;
+}
+.first-sub-footer,
+.second-sub-footer,
+.third-sub-footer{
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+.first-sub-footer a:hover,
+.second-sub-footer a:hover,
+.third-sub-footer a:hover,
+.fourth-sub-footer a:hover{
+  color: red;
+}
