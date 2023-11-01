@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Movies app</title>
   <link rel="stylesheet" href="header.css">
   <link rel="stylesheet" href="main-section.css">
   <link rel="stylesheet" href="sub-footer.css">
@@ -32,33 +32,82 @@
   </div>
 </div>
 
+  <img src="images/ddlj.jpg" class="ddlj-image">
+
   <div class="main-section">
-    <img src="images/ddlj.jpg" class="ddlj-image">
     <div class="Movie-main-section">
-      <p>Movies</p>
-      <img src="images/ddlj.jpg" class="ddlj-image">
+      <div class="main-section-name">Movies</div>
+      <div id="movies-list">
+
+         <p>Now Playing</p>
+         <div id="nowplaying-movies-list"></div>
+
+         <p>Popular</p>
+         <div id="popular-movies-list"></div>
+
+         <p>Top Rated</p>
+        <div id="top-rated-movie-list"></div>
+
+        <p>Upcoming</p>
+      <div id="upcoming-movies-list"></div>
+
+
     </div>
-    <div class="TV-Show-main-section">
-      <p>TV Show</p>
-      <img src="images/ddlj.jpg" class="ddlj-image">
+          
+
     </div>
-    <div class="Now-Playing-main-section">
-      <p>Now Playing</p>
-      <img src="images/ddlj.jpg" class="ddlj-image">
+   
+    <!-- <div class="Now-Playing-main-section">
+     
+      <img src="images/ddlj.jpg">
+      <img src="images/ddlj.jpg">
+      <img src="images/ddlj.jpg">
+      <img src="images/ddlj.jpg">
+      <img src="images/ddlj.jpg">
+      <img src="images/ddlj.jpg"> 
     </div>
-    <div class="Popular-main-section">
-      <p>Popular</p>
-      <img src="images/ddlj.jpg" class="ddlj-image">
+    </div> -->
+    <!-- <div class="Popular-main-section">
+     
+      <img src="images/ddlj.jpg">
+      <img src="images/ddlj.jpg">
+      <img src="images/ddlj.jpg">
+      <img src="images/ddlj.jpg">
+      <img src="images/ddlj.jpg">
+      <img src="images/ddlj.jpg"> 
     </div>
-    <div class="Top-Rated-main-section">
-      <p>Top Rated</p>
-      <img src="images/ddlj.jpg" class="ddlj-image">
+    </div> -->
+    <!-- <div class="Top-Rated-main-section">
+      <img src="images/ddlj.jpg">
+      <img src="images/ddlj.jpg">
+      <img src="images/ddlj.jpg">
+      <img src="images/ddlj.jpg">
+      <img src="images/ddlj.jpg">
+      <img src="images/ddlj.jpg"> 
     </div>
-    <div class="Upcoming-main-section">
-      <p>Upcoming</p>
-      <img src="images/ddlj.jpg" class="ddlj-image">
+    </div> -->
+
+    <!-- <div class="Upcoming-main-section">
+      
+      <img src="images/ddlj.jpg">
+      <img src="images/ddlj.jpg">
+      <img src="images/ddlj.jpg">
+      <img src="images/ddlj.jpg">
+      <img src="images/ddlj.jpg">
+      <img src="images/ddlj.jpg">
     </div>
+  </div> -->
+
+  <div class="TV-Show-main-section">
+    <div class="main-section-name">TV Show</div>
+    <div id="tvshow-list">
+
+      <!-- <p>Popular</p>
+      <div id="popular-tv-shows-list"></div> -->
+
   </div>
+  </div>
+ 
 
   <div class="Sub-footer">
     <div class="first-sub-footer">
@@ -78,6 +127,11 @@
     </div>
     <div class="fourth-sub-footer">
       <a href="#">Follow</a>
+       <div class="fourth-sub-footer-images">
+        <img src="images/Facebook-image.png" class="Facebook-image-icon">
+        <img src="images/instagram-image1.png" class="instagram-image-icon">
+        <img src="images/twitter-image.png" class="twitter-image-icon">
+       </div>
     </div>
   </div>
 
@@ -93,7 +147,11 @@
 
   
   
-
+  <script  type="module" src="api.js"></script>
   <script src="header.js"></script>
+  
+ 
+  
+
 </body>
 </html>

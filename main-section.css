@@ -14,6 +14,26 @@
   font-size: 25px;
   cursor: pointer;
 }
+.main-section .main-section-name{
+  color: white;
+  cursor: pointer;
+  font-size: 29px;
+  font-weight: bold;
+  position: relative;
+  top: 30px;
+  left: 500px;
+}
+.main-section .main-section-name:hover{
+  color: red;
+}
+.TV-Show-main-section .main-section-name{
+  position: relative;
+  top: 55px;
+}
 .main-section p:hover{
   color: red;
+}
+.main-section div img{
+  width: 15%;
+  margin-top: 80px;
 }

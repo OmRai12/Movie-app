@@ -18,3 +18,27 @@
 .fourth-sub-footer a:hover{
   color: red;
 }
+.fourth-sub-footer{
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}
+.fourth-sub-footer a{
+  position: relative;
+  top: -15px;
+  left: 40px;
+}
+.Facebook-image-icon{
+  height: 30px;
+  width: 30px;
+}
+.instagram-image-icon{
+  height: 30px;
+  width: 30px;
+  margin-left: 20px;
+}
+.twitter-image-icon{
+  height: 30px;
+  width: 30px;
+  margin-left: 20px;
+}

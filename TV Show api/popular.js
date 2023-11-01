@@ -1,0 +1,28 @@
+// const apiKey = 'd6f2f47bd9efef34b8b55e11b339d2e6';
+
+// export async function getPopularTVShows() {
+//     const response = await fetch(`https://api.themoviedb.org/3/tv/popular?api_key=${apiKey}`);
+//     const data = await response.json();
+//     console.log(data);
+//     const tvShows = data.results;
+
+//     const popularTVShowsList = document.getElementById('popular-tv-shows-list');
+//     popularTVShowsList.innerHTML = ''; // Clear previous results
+
+//     tvShows.forEach((tvShow) => {
+//         const tvShowTitle = tvShow.name;
+//         const tvShowFirstAirDate = tvShow.first_air_date;
+//         const tvShowOverview = tvShow.overview;
+
+//         const tvShowDiv = document.createElement('div');
+//         tvShowDiv.innerHTML = `
+//             <h2>${tvShowTitle}</h2>
+//             <p>First Air Date: ${tvShowFirstAirDate}</p>
+//             <p>${tvShowOverview}</p>
+//         `;
+//         popularTVShowsList.appendChild(tvShowDiv);
+//     });
+// }
+
+// // Call the getPopularTVShows function when the page loads
+// document.addEventListener('DOMContentLoaded', getPopularTVShows);
