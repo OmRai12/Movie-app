@@ -1,7 +1,5 @@
-const apiKey = 'd6f2f47bd9efef34b8b55e11b339d2e6';
-
 export async function gettopratedMovies() {
-  const response = await fetch(`https://api.themoviedb.org/3/movie/top_rated?api_key=${apiKey}`);
+  const response = await fetch(`https://api.themoviedb.org/3/movie/top_rated?api_key=d6f2f47bd9efef34b8b55e11b339d2e6`);
   const data = await response.json();
   console.log(data);
   const movies = data.results;
@@ -24,3 +22,5 @@ export async function gettopratedMovies() {
 
 // Call the getPopularMovies function when the page loads
 document.addEventListener('DOMContentLoaded', gettopratedMovies);
+
+

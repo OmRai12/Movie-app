@@ -28,7 +28,9 @@
 }
 .TV-Show-main-section .main-section-name{
   position: relative;
-  top: 55px;
+  top: 70px;
+  margin-bottom: 50px;
+  
 }
 .main-section p:hover{
   color: red;

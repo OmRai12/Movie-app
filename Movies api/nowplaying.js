@@ -1,7 +1,5 @@
-const apiKey = 'd6f2f47bd9efef34b8b55e11b339d2e6';
-
 export async function getnowplayingMovies() {
-  const response = await fetch(`https://api.themoviedb.org/3/movie/now_playing?api_key=${apiKey}`);
+  const response = await fetch(`https://api.themoviedb.org/3/movie/now_playing?api_key=d6f2f47bd9efef34b8b55e11b339d2e6`);
   const data = await response.json();
   console.log(data);
   const movies = data.results;
