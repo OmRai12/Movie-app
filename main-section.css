@@ -35,7 +35,55 @@
 .main-section p:hover{
   color: red;
 }
+
+.movie-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
+}
+
+.movie-poster {
+  max-width: 150px;
+  max-height: 200px;
+  border: 2px solid #FF5733;
+  margin: 10px;
+  padding: 5px;
+}
+
+.movie-info {
+  text-align: center;
+  color: white;
+  padding: 10px;
+}
+
 .main-section div img{
-  width: 15%;
+  width: 170px;
   margin-top: 80px;
+} 
+
+.Nowplaying-movies-poster,
+.Popular-movies-poster,
+.Top-rated-movies-poster,
+.Upcoming-movies-poster,
+.Nowplaying-tv-show-poster,
+.Popular-tv-show-poster,
+.Top-Rated-tv-show-poster,
+.Upcoming-tv-show-poster{
+  display: flex;
+  position: relative;
+  left: 40px;
+}
+
+.poster-hidden {
+  display: none;
+}
+
+.forward-button {
+  margin-top: 10px;
+  cursor: pointer;
+  color: white;
+  background-color: #FF5733;
+  border: none;
+  padding: 5px 10px;
 }

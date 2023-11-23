@@ -22,11 +22,3 @@ export async function getPopularMovies() {
 
 // Call the getPopularMovies function when the page loads
 document.addEventListener('DOMContentLoaded', getPopularMovies);
-
-
-
-
-
-
-
-

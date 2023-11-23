@@ -23,4 +23,3 @@ export async function getupcomingMovies() {
 }
 
 document.addEventListener('DOMContentLoaded', getupcomingMovies);
-

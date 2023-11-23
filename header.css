@@ -10,7 +10,7 @@ body{
   background-attachment: fixed;
   font-family: 'Roboto',sans-serif;
   background-color: black;
-  overflow-x: hidden;
+  
   padding-bottom: 30000px;
 }
 .header{
