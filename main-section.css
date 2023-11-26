@@ -62,6 +62,12 @@
   margin-top: 80px;
 } 
 
+.Nowplaying-movies{
+  position: relative;
+}
+
+
+
 .Nowplaying-movies-poster,
 .Popular-movies-poster,
 .Top-rated-movies-poster,
@@ -73,6 +79,8 @@
   display: flex;
   position: relative;
   left: 40px;
+  gap: 10px;
+ 
 }
 
 .poster-hidden {
@@ -86,4 +94,47 @@
   background-color: #FF5733;
   border: none;
   padding: 5px 10px;
+}
+
+
+.Popular-movies-poster img,
+.Top-rated-movies-poster img,
+.Upcoming-movies-poster img,
+.Nowplaying-tv-show-poster img,
+.Popular-tv-show-poster img,
+.Top-Rated-tv-show-poster img,
+.Upcoming-tv-show-poster img,
+.Nowplaying-movies-poster img{ 
+  border-radius: 8px;
+ 
+}
+
+.slide{
+  display: none;
+}
+
+.Nowplaying-movies-poster a, 
+.Nowplaying-movies-poster a{
+  position: relative;
+  top: 160px;
+  left: 30px;
+  font-size: 30px;
+}
+
+.arrow{
+  position: absolute;
+  top: 60%;
+  color: black;
+  background-color: rgba(255, 255, 255, 0.758);
+  font-size: 28px;
+  padding: 8px 19px;
+  border-radius: 50%;
+  font-weight: bold;
+  cursor: pointer;
+}
+.next{
+  right: 40px;
+}
+.prev{
+  left: 50px;
 }
