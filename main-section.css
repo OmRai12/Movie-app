@@ -62,7 +62,14 @@
   margin-top: 80px;
 } 
 
-.Nowplaying-movies{
+.Nowplaying-movies,
+.Popular-movies,
+.Top-rated-movies,
+.Upcoming-movies,
+.Nowplaying-tv-show,
+.Popular-tv-show,
+.Top-Rated-tv-show,
+.Upcoming-tv-show{
   position: relative;
 }
 
@@ -110,7 +117,7 @@
 }
 
 .slide{
-  display: none;
+  display: none;  
 }
 
 .Nowplaying-movies-poster a, 
