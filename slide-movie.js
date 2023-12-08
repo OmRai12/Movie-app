@@ -10,7 +10,7 @@ function nowPlayingController(x) {
 }
 
 function popularController(x) {
-  popularIndex += x;
+  popularIndex += x;  
   popularSlideshow();
 }
 
@@ -69,6 +69,7 @@ function showSlides(slides, index) {
 }
 
 // Initial call to display the first set of posters for both sections
-nowPlayingSlideshow();
 popularSlideshow();
+nowPlayingSlideshow();
 topratedSlideshow();
+upcomingSlideshow();

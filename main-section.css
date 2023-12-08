@@ -69,7 +69,7 @@
 .Nowplaying-tv-show,
 .Popular-tv-show,
 .Top-Rated-tv-show,
-.Upcoming-tv-show{
+.Airing-today-tv-show{
   position: relative;
 }
 
@@ -82,7 +82,7 @@
 .Nowplaying-tv-show-poster,
 .Popular-tv-show-poster,
 .Top-Rated-tv-show-poster,
-.Upcoming-tv-show-poster{
+.Airing-today-tv-show-poster{
   display: flex;
   position: relative;
   left: 40px;
@@ -110,7 +110,7 @@
 .Nowplaying-tv-show-poster img,
 .Popular-tv-show-poster img,
 .Top-Rated-tv-show-poster img,
-.Upcoming-tv-show-poster img,
+.Airing-today-tv-show-poster img,
 .Nowplaying-movies-poster img{ 
   border-radius: 8px;
  
