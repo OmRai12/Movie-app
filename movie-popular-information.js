@@ -1,4 +1,4 @@
- async function getPopularMovies() {
+async function getPopularMovies() {
   const response = await fetch(`https://api.themoviedb.org/3/movie/popular?api_key=d6f2f47bd9efef34b8b55e11b339d2e6`);
   const data = await response.json();
   console.log(data);

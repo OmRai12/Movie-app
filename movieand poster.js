@@ -1,10 +1,7 @@
-// Define your API key
-const apiKey = 'd6f2f47bd9efef34b8b55e11b339d2e6';
-
-// Now you can use this apiKey variable in your API requests
 document.addEventListener('DOMContentLoaded', async () => {
-  // Example: Fetch Now Playing Movies
-  const nowplayingMoviesContainer = document.querySelector('.Nowplaying-movies-poster');
+  const apiKey = 'd6f2f47bd9efef34b8b55e11b339d2e6';
+  const nowplayingMoviesContainer = document.querySelector('#nowplaying-poster');
+
   try {
     const nowPlayingMovies = await fetchNowPlayingMovies(apiKey);
     displayMoviePosters(apiKey, nowPlayingMovies, nowplayingMoviesContainer);
@@ -13,35 +10,29 @@ document.addEventListener('DOMContentLoaded', async () => {
   }
 });
 
-// Example function for fetching Now Playing Movies
 async function fetchNowPlayingMovies(apiKey) {
   const response = await fetch(`https://api.themoviedb.org/3/movie/now_playing?api_key=${apiKey}`);
   const data = await response.json();
   return data.results;
 }
 
-// Example function for displaying movie posters
 function displayMoviePosters(apiKey, movies, container) {
   container.innerHTML = ''; // Clear existing posters
   movies.forEach(movie => {
     const posterUrl = `https://image.tmdb.org/t/p/w500${movie.poster_path}`;
     const posterElement = document.createElement('div');
     posterElement.classList.add('slide');
-    posterElement.innerHTML = `<img src="${posterUrl}" alt="${movie.title}">`;
+    posterElement.innerHTML = `<img src="${posterUrl}" alt="${movie.title}" onclick="showMovieDetails(${movie.id})">`;
     container.appendChild(posterElement);
   });
 }
 
-// Example function for Now Playing Movies controller
-// Example function for Now Playing Movies controller
-function nowPlayingController(direction) {
-  const container = document.querySelector('.Nowplaying-movies-poster');
-  const scrollAmount = 200; // You can adjust this value as needed
+async function showMovieDetails(movieId) {
+  const apiKey = 'd6f2f47bd9efef34b8b55e11b339d2e6';
+  const response = await fetch(`https://api.themoviedb.org/3/movie/${movieId}?api_key=${apiKey}`);
+  const movieDetails = await response.json();
+  console.log('Movie Details:', movieDetails);
 
-  if (direction === 1) {
-    container.scrollLeft += scrollAmount;
-  } else {
-    container.scrollLeft -= scrollAmount;
-  }
+  // You can now display the movie details in a modal or another section on your page
+  // Update the code according to your specific design and requirements
 }
-
